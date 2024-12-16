@@ -184,7 +184,7 @@ p,li {
 }
 
 /* TABLET */
-@media (min-width: 577px) and (max-width: 976px) {
+@media (min-width: 769px) and (max-width: 976px) {
 
     .nav-text {
         font-size: medium;
@@ -213,7 +213,7 @@ p,li {
 }
 
 /* MOBILE */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     /* Format Navigation Items to Column */
     .nav-items {
