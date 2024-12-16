@@ -1,0 +1,253 @@
+/* Format BODY */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c6e7ff;
+}
+
+/* Format NAVIGATION BAR */
+/* ===================== */
+.navbar{
+    display:flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #B2C9AD;
+}
+.nav-items {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    margin: 1%;
+}
+.nav-text {
+    padding-bottom: 0;
+    width: fit-content;
+}
+.nav-text > a {
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+    color: #543A14;
+}
+
+/* Ensure all Images fit into a flex item */
+/* ====================================== */
+img {
+    max-width: 90%;
+    margin: 2%;
+    padding: 2%;
+}
+
+/* Format CONTAINERS and SECTIONS */
+/* ============================== */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+/* Format HEADER Sections */
+.header-section {
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.sub-header-section {
+    display: flex;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.sub-header-contents {
+    flex: 1;
+    padding: 1%;
+    margin: 1%;
+}
+/* Format CONTENT Sections */
+.content-section {
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+}
+/* flex:1 evenly distributes flex items */
+.sub-section {
+    flex: 1;
+    padding: 1%;
+    margin: 1%;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #B2C9AD;
+}
+
+/* Individual CONTAINER FORMATTING */
+/* =============================== */
+
+/* Introduction */
+#introduction {
+    background-color: #c6e7ff;
+    padding-top: 5%;
+}
+.same-line-text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1%;
+    padding: 0;
+}
+.same-line-text-contents {
+    margin: 0;
+    padding-bottom: 0;
+}
+#about-me {
+    background-color: #d4f6ff;
+}
+#resume {
+    background-color: #ffddae;
+}
+#showcase {
+    background-color: #A1EEBD;
+}
+.showcase-img {
+    margin: 0;
+    padding: 0;
+}
+#contact {
+    background-color: #c6e7ff;
+}
+
+/* Format TEXT */
+/* =========== */
+.hi {
+    font-size: xx-large;
+    font-weight: bold;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:xx-large;
+    color: #543A14;
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:xx-large;
+    color: #543A14;
+    margin-left: 1%;
+    padding-left: 1%;
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:x-large;
+    color: #543A14;
+}
+p,li {
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+    color: #543A14;
+    margin-top: 1%;
+}
+.p-bold {
+    font-weight: bold;
+    margin: 0;
+    margin-top: 4%;
+    padding: 0;
+}
+.p-norm {
+    margin: 0;
+    padding: 0;
+}
+.image-credits {
+    font-size: small;
+}
+
+/* TABLET */
+@media (min-width: 577px) and (max-width: 976px) {
+
+    .nav-text {
+        font-size: medium;
+        width: fit-content;
+    }
+    .same-line-text {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 1%;
+        padding: 0;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    h3 {
+        font-size: large;
+    }
+    p,li {
+        font-size: medium;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+    /* Format Navigation Items to Column */
+    .nav-items {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    .nav-text {
+        width: fit-content;
+        padding-bottom: 2%;
+    }
+    .nav-text > a {
+        font-size: small;
+    }
+    /* Format Elements to Column */
+    .main-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1%;
+        padding-left: 0;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+    .content-section {
+        flex-direction: column;
+    }
+    .sub-header-section {
+        flex-direction: column;
+    }
+    .same-line-text {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 1%;
+        padding: 0;
+    }
+    /* Move top section down, so that it is not hidden */
+    #introduction {
+        padding-top: 40%; 
+    }
+     
+}
